@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+@import url('https://fonts.googleapis.com/css?family=Font+Name');
+
+section {
+    width: 100%;
+    max-width: 1500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-duration: background;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+}
+
+.main {
+    width: 100%;
+    max-width: 1000px;
+    height: 520px;
+    background-color: blue;
+    -webkit-box-shadow: 0px 14px 32px 12px rgba(34, 60, 80, 0.24);
+    -moz-box-shadow: 0px 14px 32px 12px rgba(34, 60, 80, 0.24);
+    box-shadow: 0px 14px 32px 12px rgba(34, 60, 80, 0.24);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 100px));
+    grid-template-rows: repeat(4, 200px);
+    gap: 20px;
+    background-color: white;
+    justify-content: center;
+    padding: 20px;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-duration: background;
+}
+
+.cboxes {
+    border-radius: 20px;
+    position: relative;
+    top: 24px;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-duration: background;
+}
+.cboxes:hover{
+    transform: scale(1.1) translateX(0.5px);   
+}
+.cboxes:active {
+    margin: 10px;
+    transform: translateY(-5px);
+}
+
+button {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background-color: rgb(26, 204, 163);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+
+}
+
+button:hover {
+    transform: scale(1.1) translateX(5px);    
+}
+
+@media screen and (max-width: 920px) {
+    section {
+        height: auto;
+        padding: 10px;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        padding: 10px;
+        background: none;
+        border: none;
+        box-shadow: none;
+        grid-auto-rows: auto;
+        grid-row: auto;
+        grid-auto-flow: row;
+    }
+
+    .cboxes {
+        background-color: black;
+        border-radius: 20px;
+        position: relative;
+        top: 0;
+        border: solid 2px black;
+    }
+
+    h1 {
+        font-size: 20px;
+        color: black;
+    }
+}
